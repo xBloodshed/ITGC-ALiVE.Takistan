@@ -1,0 +1,12 @@
+//////////////////////////////////////////////////////////////////
+// Function file for Armed Assault
+// Created by: TODO: Author Name
+//////////////////////////////////////////////////////////////////
+
+_cama = _this select 0;
+_medico = _this select 1;
+_callid = _this select 2;
+
+_cama attachTo [_medico,[0,1.3,0.3]];
+
+if(true) exitWith{};
