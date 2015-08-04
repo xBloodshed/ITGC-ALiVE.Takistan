@@ -32,7 +32,7 @@ tpw_animal_noisetime = _this select 4; // maximum time in between animal noises
 if (isMultiplayer) then 
 	{
 	tpw_animal_sleep = 10; 
-	tpw_animal_max =15; 
+	tpw_animal_max =5; 
 	tpw_animal_maxradius = 200;
 	tpw_animal_minradius = 75;
 	};
