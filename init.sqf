@@ -17,6 +17,7 @@ call compile preprocessFileLineNumbers "removeTasks.sqf";
 [] execVM "scripts\prayer.sqf";
 0 = [] execvm "scripts\tpw_core.sqf";
 player execVM "scripts\simpleEP.sqf";
+execVM "headlessclient\passToHCs.sqf";
 //------------------------------//
 
 
