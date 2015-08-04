@@ -11,7 +11,7 @@ sleep 5;
 _vant = [getPos UAV1, 60, "B_UAV_02_F", WEST] call BIS_fnc_spawnVehicle;
 createVehicleCrew (_vant select 0);
 
-hint "SYNCH THE UAV TERMINAL NOW";
+hint "SYNC THE UAV TERMINAL NOW";
 
 if (true)exitWith {};
   
