@@ -1,15 +1,13 @@
 //////////////////////////////
 //--ALiVE TAKISTAN NATOFOR--//
+//-------By M4RT14L---------//
 //////////////////////////////
 
 #include "bon_recruit_units\dialog\common.hpp"
 #include "bon_recruit_units\dialog\recruitment.hpp"
-#include "params.hpp"
 #include "ATM_airdrop\dialog.hpp"
 #include "Rtask\defines.hpp"
 #include "Rtask\dialogs.hpp"
-#include "ASORVS\menu.hpp"
-#include "LOP_Tak_Civ_XEH.hpp"
 
 aiKills = 0;
 briefing = 1;
@@ -19,12 +17,12 @@ enableDebugConsole = 1;
 allowFunctionsRecompile = 1;
 allowFunctionsLog = 1;
 respawn = 3;
+respawnOnStart = 1;
 respawnDelay = 15;
 respawnTemplates[] = {"Revive","MenuPosition"};
-respawnOnStart = -1;
 reviveDelay = 15;
 reviveForceRespawnDelay = 3;
-reviveBleedOutDelay = 120;  
+reviveBleedOutDelay = 180;  
 
 class Header
 {
@@ -34,12 +32,18 @@ class Header
 	playerCountMultipleOf = 1;
 };
 
-author = "M4RT14L | customized by xBloodshed";
-onLoadName = "NATOFOR for ITGC";
+author = "xBloodshed based off M4RT14L's NATOFOR";
+onLoadName = "TAKISTAN CONTROL";
 onLoadMission = "Terrorist and insurgent forces try to gain control of Takistan and enter the fight to drive out Task Force ITGC. Fight back and retake control.";
 loadScreen = "pics\logo.jpg";
 overviewPicture = "pics\logo.jpg";
 overviewText = "TS3 : ts.itgcommunity.com";
+
+corpseManagerMode = 1;
+corpseLimit = 10;
+corpseRemovalMinTime = 60;
+corpseRemovalMaxTime = 1200;
+wreckManagerMode = 1;
 
 class CfgNotifications
 {
@@ -60,7 +64,7 @@ class CfgNotifications
 		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcon_ca.paa";
 		description = "%2";
 		color[] = {1,1,1,1};
-		priority = 0;
+		priority = 4;
 	};
 	class TaskSucceeded
 	{
@@ -68,7 +72,7 @@ class CfgNotifications
 		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcon_ca.paa";
 		description = "%2";
 		color[] = {0.6,0.8,0.4,1};
-		priority = 1;
+		priority = 3;
 	};
 	class TaskFailed
 	{
@@ -76,7 +80,7 @@ class CfgNotifications
 		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcon_ca.paa";
 		description = "%2";
 		color[] = {1,0.1,0,1};
-		priority = 1;
+		priority = 2;
 	};
 	class TaskCanceled
 	{
@@ -85,6 +89,14 @@ class CfgNotifications
 		description = "%2";
 		color[] = {0.75,0.75,0.75,1};
 		priority = 1;
+	};
+	class TaskCreated
+	{
+		title = "TASK CREATED";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcon_ca.paa";
+		description = "%2";
+		color[] = {1,1,1,1};
+		priority = 5;
 	};
 	
 };
@@ -100,25 +112,17 @@ class CfgSounds
 
 };
 
-class CfgMusic
-{
-  	tracks[]=
-  	{
-      		Intro
-  	};
- 
-  	class Intro
-  	{
-      		name = "Intro";
-      		sound[] = {"music\Intro.ogg", db+0, 1.0};
-  	};
+class Params {
+	class STARTTIME {
+		title = "Mission Start Time";
+		values[] = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24};
+		texts[] = {
+			"1:00","2:00","3:00","4:00","5:00","6:00","7:00","8:00","9:00","10:00","11:00","12:00",
+			"13:00","14:00","15:00","16:00","17:00","18:00","19:00","20:00","21:00","22:00","23:00","24:00"
+		};
+		default = 8;
+		function = "BIS_fnc_paramDaytime";
+	};
 };
-
-class CfgFunctions
-{
-	#include "ASORVS\cfgfunctions.hpp"
-};
-
-
 
 

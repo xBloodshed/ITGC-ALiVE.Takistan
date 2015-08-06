@@ -1,8 +1,14 @@
-//--By Master-Antonio---------------------//
+//--By Kylania----------------------//
 //----------------------------------//
 
 
 //Mission Select
 if(!isServer) exitWith {};
-_missions = ["ied","roadrepair","hqbuild","towrepair","vehrepair","rescue","uavrec","pilotrescue"] call BIS_fnc_selectRandom; //mission array + Random
-[_missions] execVM "Rtask\makeSupportOps.sqf";  //call mission
+
+//waituntil {!isnil "bis_fnc_init"}; //waiting
+
+_missions = ["ied","roadrepair","hqbuild","towrepair","vehrepair","rescue","uavrec","pilotrescue"]; //mission array
+
+_choose = _missions call BIS_fnc_selectRandom; // random mission 
+//_choose = "towrepair";
+[_choose] execVM "Rtask\makeSupportOps.sqf";  //call mission

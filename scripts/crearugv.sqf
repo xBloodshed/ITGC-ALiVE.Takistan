@@ -11,6 +11,6 @@ sleep 5;
 _ugv = [getPos UAV2, 150, "B_UGV_01_rcws_F", WEST] call BIS_fnc_spawnVehicle;
 createVehicleCrew (_ugv select 0);
 
-hint "SYNC THE UAV TERMINAL NOW";
+hint "SYNCH THE UAV TERMINAL NOW";
 
 if (true)exitWith {};

@@ -3,6 +3,7 @@
 //-------By M4RT14L---------//
 //////////////////////////////
 
+#include "funcs\compile_funcs.sqf"
 #include "initBriefing.sqf";
 enableSaving [false,false];
 
@@ -15,34 +16,19 @@ call compile preprocessFileLineNumbers "removeTasks.sqf";
 //Scripts-----------------------//
 [] execVM "bon_recruit_units\init.sqf";
 [] execVM "scripts\prayer.sqf";
-0 = [] execvm "scripts\tpw_core.sqf";
-player execVM "scripts\simpleEP.sqf";
+execVM "scripts\NRE_earplugs.sqf";
 //------------------------------//
 
-
-//Other Scripts  ------------------//
-null = [] execVM "minedetector.sqf";
+//Others-----------------------//
 [] execVM "zlt_fastrope.sqf";
-//------------------------------//
+//-----------------------------------//
 
-//---Read the Time
-curTimeHour = (paramsArray select 0);
-curTimeMinutes = (paramsArray select 1);
-curTimeMonth = (paramsArray select 2);
-curTimeDay = (paramsArray select 3);
-
-if (isNil "curTimeHour") then {curTimeHour = 9};
-if (isNil "curTimeMinutes") then {curTimeMinutes = 0};
-if (isNil "curTimeMonth") then {curTimeMinutes = 1};
-if (isNil "curTimeDay") then {curTimeMinutes = 1};
-setDate [2035, curTimeMonth, curTimeDay, curTimeHour, curTimeMinutes];
-//------------------------------//
-
+tf_no_auto_long_range_radio = true;
+  
 if (hasInterface) then {
-	
-	titleText ["Customized for ITGC by  X B L O O D S H E D", "BLACK IN",10000];
+	titleText ["For ITGC by X B L O O D S H E D...", "BLACK IN",9999];
 	0 fadesound 0;
-	
+
 	private ["_cam","_camx","_camy","_camz","_object"];
 	_start = time;
 
@@ -61,8 +47,8 @@ if (hasInterface) then {
 	_cam CamCommit 0;
 	
 	_cam camsetpos [_camx -15 ,_camy + 15,_camz+3];
-	playMusic "Intro";
-	titleText ["A L i V E - N A T O F O R   Persistent for I T G C", "BLACK IN",10];
+	
+	titleText ["T A K I S T A N   C O N T R O L  for  I T G C  by  X B L O O D S H E D", "BLACK IN",10];
 	10 fadesound 0.9;
 	_cam CamCommit 20;
 	sleep 5;
@@ -72,6 +58,8 @@ if (hasInterface) then {
 	CamDestroy _cam;
 
 };
+
+
 if (!hasInterface && !isDedicated) then {
 	headlessClients = [];
 	headlessClients set [(count headlessClients), player];

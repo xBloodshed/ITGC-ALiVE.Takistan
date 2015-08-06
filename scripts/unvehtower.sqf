@@ -1,0 +1,12 @@
+//////////////////////////////////////////////////////////////////
+// Function file for Armed Assault
+// Created by: TODO: Author Name
+//////////////////////////////////////////////////////////////////
+
+_towedVeh = _this select 0;
+_engineer = _this select 1;
+_callid = _this select 2;
+
+detach _towedVeh;
+
+if(true) exitWith{};

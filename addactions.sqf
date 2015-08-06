@@ -66,3 +66,27 @@ if (!isDedicated) then {
     grab = [];
     "grab" addPublicVariableEventHandler {(_this select 1) call fnc_grab};
 };
+
+if (!isDedicated) then {
+    fnc_getintel = {
+        _this addAction ["<t color='#FF6600'>Take intel</t>", "scripts\getintel.sqf", nil, 6, true, true, "", ""];
+    };
+    getintel = [];
+    "getintel" addPublicVariableEventHandler {(_this select 1) call fnc_getintel};
+};
+
+if (!isDedicated) then {
+    fnc_towvehicle = {
+        _this addAction ["<t color='#FF6600'>Tow vehicle</t>", "scripts\vehtower.sqf", nil, 6, true, true, "", ""];
+    };
+    towvehicle = [];
+    "towvehicle" addPublicVariableEventHandler {(_this select 1) call fnc_towvehicle};
+};
+
+if (!isDedicated) then {
+    fnc_untowvehicle = {
+        _this addAction ["<t color='#FF6600'>Release vehicle</t>", "scripts\unvehtower.sqf", nil, 6, true, true, "", ""];
+    };
+    untowvehicle = [];
+    "untowvehicle" addPublicVariableEventHandler {(_this select 1) call fnc_untowvehicle};
+};

@@ -8,7 +8,6 @@
 //---MHQ-------------------------------------//
 
 execVM "scripts\nash_zeus_mhq.sqf";
-[] execVM "module_performance\init.sqf";
 ["Initialize"] call BIS_fnc_dynamicGroups;
 
 //--- Curator settings-----------------------//
@@ -93,3 +92,9 @@ _curator addcuratoraddons [
 		"A3_Weapons_F",
 		"A3_Weapons_F_Acc"
 ];
+
+//--- Curator Points----------------------//
+
+_curator addCuratorPoints 20;
+
+//--- Curator Costs-----------------------//

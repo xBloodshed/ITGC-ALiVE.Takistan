@@ -35,3 +35,35 @@
 		</Key>
 	</Package>
 </Project>
+<Project name="NRE Earplugs">
+	<Package name="NREEarplugs">
+		<Key ID="STR_NREEP_IN_HINT">
+			<Original>You have insert the earplugs!</Original>
+			<English>You have insert the earplugs!</English>
+			<Russian>Беруши вставлены!</Russian>
+			<German>Du hast die Ohrstoepsel eingesteckt!</German>
+			<Spanish>¡Te has puesto los tapones!</Spanish>
+		</Key>
+		<Key ID="STR_NREEP_OUT_HINT">
+			<Original>You have removed the earplugs!</Original>
+			<English>You have removed the earplugs!</English>
+			<Russian>Беруши вытащены!</Russian>
+			<German>Du hast die Ohrstoepsel rausgenommen!</German>
+			<Spanish>¡Te has quitado los tapones!</Spanish>
+		</Key>
+		<Key ID="STR_NREEP_IN_ACTION">
+			<Original>Insert earplugs</Original>
+			<English>Insert earplugs</English>
+			<Russian>Вставить беруши</Russian>
+			<German>Ohrstoepsel einstecken</German>
+			<Spanish>Ponerte los tapones</Spanish>
+		</Key>
+		<Key ID="STR_NREEP_OUT_ACTION">
+			<Original>Remove earplugs</Original>
+			<English>Remove earplugs</English>
+			<Russian>Вытащить беруши!</Russian>
+			<German>Ohrstoepsel rausnehmen</German>
+			<Spanish>Quitarte los tapones</Spanish>
+		</Key>
+	</Package>
+</Project>

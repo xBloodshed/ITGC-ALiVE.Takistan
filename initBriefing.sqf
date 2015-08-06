@@ -34,8 +34,10 @@ player createDiaryRecord [
 		"SUPPORT", 
 		"<br/>There are some support elements deployed in Loy Manara AB, for use with Laser Designators.
 		<br/><br/>- <font face='PuristaBold'>VECTOR ONE and VECTOR TWO</font> for maneuver support,
-		<br/>- <font face='PuristaBold'>SCIMITAR ONE</font> for CAS,
+		<br/>- <font face='PuristaBold'>SCIMITAR ONE</font> for Apache CAS,
+		<br/>- <font face='PuristaBold'>HOG ONE</font> for A-10 CAS,
 		<br/>- <font face='PuristaBold'>STEEL RAIN ONE</font> for Artillery Fire Support,
+		<br/>- <font face='PuristaBold'>MEDEVAC ONE</font> for MEDEVAC,
 		<br/>- The Commander asistant/UAV CCT can deploy UAVs or UGVs from <marker name='command'>here</marker>
 		<br/><br />You can perform HALO Jump from <marker name='command_2'>here</marker>."
 	]
