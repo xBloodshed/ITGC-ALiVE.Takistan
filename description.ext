@@ -41,7 +41,7 @@ overviewText = "TS3 : ts.itgcommunity.com";
 
 corpseManagerMode = 1;
 corpseLimit = 10;
-corpseRemovalMinTime = 60;
+corpseRemovalMinTime = 70;
 corpseRemovalMaxTime = 1200;
 wreckManagerMode = 1;
 
