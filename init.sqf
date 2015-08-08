@@ -17,6 +17,7 @@ call compile preprocessFileLineNumbers "removeTasks.sqf";
 [] execVM "bon_recruit_units\init.sqf";
 [] execVM "scripts\prayer.sqf";
 execVM "scripts\NRE_earplugs.sqf";
+execVM "headlessclient\passToHCs.sqf";
 //------------------------------//
 
 //Others-----------------------//
