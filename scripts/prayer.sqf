@@ -3,7 +3,7 @@
 //     M4RT14L      //
 //////////////////////
 _mosque = [minarete_1,minarete_2,minarete_3,minarete_4,minarete_5,minarete_6,minarete_7];
-_times_to_play = [5, 12, 15, 18, 19];
+_times_to_play = [6, 12, 15, 18, 19];
 _played_times = [0, 0, 0, 0, 0];
 _i = 0;
 while {true} do
