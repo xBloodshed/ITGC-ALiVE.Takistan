@@ -19,10 +19,10 @@ allowFunctionsLog = 1;
 respawn = 3;
 respawnOnStart = 1;
 respawnDelay = 15;
-respawnTemplates[] = {"Revive","MenuPosition"};
-reviveDelay = 15;
-reviveForceRespawnDelay = 3;
-reviveBleedOutDelay = 180;  
+respawnTemplates[] = {"MenuPosition"};
+//reviveDelay = 15;
+//reviveForceRespawnDelay = 3;
+//reviveBleedOutDelay = 180;  
 
 class Header
 {
