@@ -8,6 +8,7 @@
 #include "ATM_airdrop\dialog.hpp"
 #include "Rtask\defines.hpp"
 #include "Rtask\dialogs.hpp"
+#include "taw_vd\dialog.hpp"
 
 aiKills = 0;
 briefing = 1;
@@ -110,6 +111,11 @@ class CfgSounds
 	class Para {name="Para";sound[]={ATM_airdrop\data\parachute.ogg,db-11,1.0};titles[] = {};};
 	class muezzin {name="muezzin";sound[]={sound\muezzin.ogg,db+10,1.0};titles[] = {};};
 
+};
+
+class CfgFunctions
+{
+	#include "taw_vd\CfgFunctions.hpp"
 };
 
 class Params {

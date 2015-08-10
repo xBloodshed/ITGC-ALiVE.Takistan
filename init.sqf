@@ -17,10 +17,7 @@ call compile preprocessFileLineNumbers "removeTasks.sqf";
 //Scripts-----------------------//
 [] execVM "bon_recruit_units\init.sqf";
 [] execVM "scripts\prayer.sqf";
-<<<<<<< HEAD
-execVM "headlessclient\passToHCs.sqf";
-=======
->>>>>>> a39e90a3268f5dabf21ade5da2595ea441fb4357
+
 //------------------------------//
 
 //Others-----------------------//
@@ -44,8 +41,8 @@ if (hasInterface) then {
 	private ["_cam","_camx","_camy","_camz","_object"];
 	_start = time;
 
-	waituntil {(player getvariable ["alive_sys_player_playerloaded",false]) || ((time - _start) > 20)};
-	sleep 10;
+	waituntil {(player getvariable ["alive_sys_player_playerloaded",false]) || ((time - _start) > 10)};
+	sleep 5;
 	
 	_object = player;
 	_camx = getposATL player select 0;
