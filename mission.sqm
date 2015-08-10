@@ -11964,7 +11964,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Flag_NATO_F";
 			skill=0.60000002;
-			init="this addAction [""Recruit Units"",""bon_recruit_units\open_dialog.sqf""]; this allowdamage false;this addAction [""Teleport - Base"",""teleport.sqf"",[""base""]];this setFlagTexture ""pics\flag.jpg"";";
+			init="this addAction [""Recruit Units"",""bon_recruit_units\open_dialog.sqf""]; this allowdamage false;this addAction [""Teleport - Base"",""scripts/teleport.sqf"",[""base""]];this setFlagTexture ""pics\flag.jpg"";";
 		};
 		class Item729
 		{
@@ -13042,7 +13042,7 @@ class Mission
 			vehicle="ACE_Rallypoint_West_Base";
 			skill=0.60000002;
 			text="ace_respawn";
-			init="this addAction [""<t color='#FFFF00'>Recruit Units</t>"",""bon_recruit_units\open_dialog.sqf""]; this addAction[""<t color='#0000FF'>HALO</t>"", ""ATM_airdrop\atm_airdrop.sqf""]; this allowdamage false;this setFlagTexture ""pics\flag.jpg"";this addAction [""Teleport - Garmsar FSB"",""teleport.sqf"",[""Garmsar_FSB""]];";
+			init="this addAction [""<t color='#FFFF00'>Recruit Units</t>"",""bon_recruit_units\open_dialog.sqf""]; this addAction[""<t color='#0000FF'>HALO</t>"", ""ATM_airdrop\atm_airdrop.sqf""]; this allowdamage false;this setFlagTexture ""pics\flag.jpg"";this addAction [""Teleport - Garmsar FSB"",""scripts/teleport.sqf"",[""Garmsar_FSB""]];";
 		};
 	};
 	class Markers
