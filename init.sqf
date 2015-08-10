@@ -17,6 +17,10 @@ call compile preprocessFileLineNumbers "removeTasks.sqf";
 //Scripts-----------------------//
 [] execVM "bon_recruit_units\init.sqf";
 [] execVM "scripts\prayer.sqf";
+<<<<<<< HEAD
+execVM "headlessclient\passToHCs.sqf";
+=======
+>>>>>>> a39e90a3268f5dabf21ade5da2595ea441fb4357
 //------------------------------//
 
 //Others-----------------------//
@@ -56,7 +60,7 @@ if (hasInterface) then {
 	
 	_cam camsetpos [_camx -15 ,_camy + 15,_camz+3];
 	
-	titleText ["T A K I S T A N   C O N T R O L  for  I T G C  by  X B L O O D S H E D", "BLACK IN",10];
+	titleText ["T A K I S T A N   C O N T R O L  for  I T G C  by  X B L O O D S H E D", "BLACK IN",5];
 	10 fadesound 0.9;
 	_cam CamCommit 20;
 	sleep 5;
