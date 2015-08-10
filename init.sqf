@@ -5,6 +5,7 @@
 
 #include "funcs\compile_funcs.sqf"
 #include "initBriefing.sqf";
+execVM "headlessClient\passToHCs.sqf";
 enableSaving [false,false];
 
 //Funciones---------------------//
@@ -16,8 +17,6 @@ call compile preprocessFileLineNumbers "removeTasks.sqf";
 //Scripts-----------------------//
 [] execVM "bon_recruit_units\init.sqf";
 [] execVM "scripts\prayer.sqf";
-execVM "scripts\NRE_earplugs.sqf";
-execVM "headlessclient\passToHCs.sqf";
 //------------------------------//
 
 //Others-----------------------//
@@ -26,6 +25,14 @@ execVM "headlessclient\passToHCs.sqf";
 
 tf_no_auto_long_range_radio = true;
   
+if (!hasInterface) then {
+	headlessClients = [];
+	headlessClients set [(count headlessClients), player];
+	publicVariable "headlessClients";
+	isHC = true;
+};
+
+
 if (hasInterface) then {
 	titleText ["For ITGC by X B L O O D S H E D...", "BLACK IN",9999];
 	0 fadesound 0;
@@ -58,12 +65,4 @@ if (hasInterface) then {
 	_cam CameraEffect ["Terminate","Back"];
 	CamDestroy _cam;
 
-};
-
-
-if (!hasInterface && !isDedicated) then {
-	headlessClients = [];
-	headlessClients set [(count headlessClients), player];
-	publicVariable "headlessClients";
-	isHC = true;
 };
