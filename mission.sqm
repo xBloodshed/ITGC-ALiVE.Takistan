@@ -631,8 +631,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.40000001;
 					text="s25";
-					init="this setGroupid [""Rumbler2""];";
-					description="Rumbler 4-2 (Armor)";
+					description="Rumbler-1 Crewman (Armor)";
 				};
 				class Item2
 				{
@@ -645,7 +644,7 @@ class Mission
 					skill=0.40000001;
 					text="s26";
 					init="this setGroupid [""Rumbler3""];";
-					description="Rumbler 4-3 (Armor)";
+					description="Rumbler-1 Crewman (Armor)";
 				};
 				class Item3
 				{
@@ -658,7 +657,7 @@ class Mission
 					skill=0.40000001;
 					text="s27";
 					init="this setGroupid [""Rumbler4""];";
-					description="Rumbler 4-4 (Armor)";
+					description="Rumbler-1 Crewman (Armor)";
 				};
 			};
 		};
@@ -2000,7 +1999,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					syncId=19;
-					synchronizations[]={32,65,66,44,43,42,67,31,33,34,35,36,37,50,49,48,51,47,46,52,53,54,55,41,40,39,38,62,59,58,57,56,60,61,63,64,69,45};
+					synchronizations[]={32,65,66,44,43,42,67,31,33,34,35,36,37,50,49,48,51,47,46,52,53,54,55,41,40,39,38,62,59,58,57,56,60,61,63,64,69,45,77};
 				};
 			};
 		};
@@ -4868,7 +4867,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=847;
+		items=848;
 		class Item0
 		{
 			position[]={8207.0234,295.31796,2177.1953};
@@ -13297,6 +13296,19 @@ class Mission
 			vehicle="Land_PaperBox_open_full_F";
 			skill=0.60000002;
 			init="this allowDammage false;";
+		};
+		class Item847
+		{
+			position[]={7671.7695,296.04001,1714.4967};
+			azimut=147.39108;
+			id=954;
+			side="EMPTY";
+			vehicle="RHS_C130J";
+			skill=0.40000001;
+			text="C130_J";
+			description="C130_J";
+			syncId=77;
+			synchronizations[]={19};
 		};
 	};
 	class Markers
